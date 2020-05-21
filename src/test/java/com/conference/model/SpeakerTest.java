@@ -9,7 +9,9 @@ import static org.hamcrest.Matchers.notNullValue;
 public class SpeakerTest {
     @Test
     public void shouldHaveAFirstNameAndALastName() {
-        Speaker speaker = new Speaker("Test", "Speaker");
+        String firstName = "Test";
+        String lastName = "Speaker";
+        Speaker speaker = new Speaker(firstName, lastName);
 
         assertThat(speaker.getFirstName(), is(notNullValue()));
         assertThat(speaker.getLastName(), is(notNullValue()));
