@@ -7,7 +7,7 @@
           class="com.conference.repository.HibernateSpeakerRepositoryImplementation" />
 
     <bean name="speakerService"
-          class="com.conference.service.SpeakerServiceImplementation">
-        <constructor-arg index="0" ref="speakerRepository" />
+          class="com.conference.service.SpeakerServiceImplementation"
+          autowire="constructor">
     </bean>
 </beans>
