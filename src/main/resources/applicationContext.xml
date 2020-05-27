@@ -8,6 +8,6 @@
 
     <bean name="speakerService"
           class="com.conference.service.SpeakerServiceImplementation"
-          autowire="constructor">
+          autowire="byType">
     </bean>
 </beans>
